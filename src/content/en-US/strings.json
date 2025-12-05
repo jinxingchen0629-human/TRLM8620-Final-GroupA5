@@ -45,7 +45,8 @@
     "Home": {
         "welcomeSubtitle": "We provide everything you need to take on the Galactization (G11n) Challenge (and win).",
         "symbolAlt": "Imperial Credit currency symbol",
-        "welcomeTitle": "Welcome to Galaxy L10n Supplies!"
+        "welcomeTitle": "Welcome to Galaxy L10n Supplies!",
+        "featuredImageAlt": "{productTitle} image"
     },
     "Browse": {
         "browseTitleAll": "All",

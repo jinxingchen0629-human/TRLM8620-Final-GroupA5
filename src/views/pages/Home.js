@@ -19,11 +19,12 @@ let Home = {
         featuredProducts.forEach((product, key) => {
 
             //string to give image an alt tag for accessibility
-            let imageAlt = product.title + " image";
+            let imageAltTemplate = i18n.getString("Home", "featuredImageAlt");
+            let imageAlt = imageAltTemplate.replace("{productTitle}", product.title);
 
             view += `
                     <article id="${product.productID}" class="${product.type}">
-                        <img src="${product.imageURL}" class="gridImage" alt="${imageAlt}">
+                       <img src="${product.imageURL}" class="gridImage" alt="${imageAlt}" title="${imageAlt}">
                         <div class="gridDes">
                             <h3>${product.title}</h3>
                             <div class="gridPrice">
